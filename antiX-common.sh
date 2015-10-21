@@ -1420,7 +1420,7 @@ explore_dir() {
 
         #bg_info_box -o --undecorated "$TITLE" "" "$@"
         bg_info_box "$TITLE" "" "$@"
-        $filer $dir
+        thunar $dir
         kill_bg_info_box
     else
         #markup_text "$@"
