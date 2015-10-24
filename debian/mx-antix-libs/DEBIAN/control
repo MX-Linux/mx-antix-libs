@@ -1,0 +1,11 @@
+Package: mx-antix-libs
+Version: 0.6.0
+Architecture: all
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 352
+Conflicts: antix-libs
+Replaces: antix-libs
+Section: system
+Priority: required
+Homepage: http://antix.mepis.org
+Description: libs for running MX Linux.

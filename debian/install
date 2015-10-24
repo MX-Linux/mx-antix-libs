@@ -1,2 +1,10 @@
-antiX-style-default.sh	usr/local/lib/antiX
-antiX-common.sh         usr/local/lib/antiX
+locale/*	               /usr/share/locale
+lib/*                          /usr/local/lib
+make-fstab                     /sbin
+autologin                      /sbin
+make-xorg-conf                 /sbin
+mxers                          /etc/sudoers.d
+sbin/*                         /usr/sbin
+excludes/*                     /usr/local/share/excludes 
+boot-menus/*                   /usr/local/share/boot-menus             
+pc-speaker.conf                /etc/modprobe.d 

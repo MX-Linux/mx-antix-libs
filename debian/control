@@ -1,14 +1,13 @@
 Source: mx-antix-libs
 Section: system
-Priority: optional
-Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
-Bugs: mailto: maintainer@mepiscommunity.org
-XSBC-Original-Maintainer: anticapitalista <antiX@operamail.com>
+Priority: required
+Maintainer: anticapitalista <antiX@operamail.com>
 Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
 
 Package: mx-antix-libs
-Architecture: all 
-Depends: antix-libs 
-Description: libs for running antiX/MX.
+Architecture: all
+Conflicts: antix-libs
+Replaces: antix-libs
+Description: libs for running MX Linux.

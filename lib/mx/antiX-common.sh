@@ -28,8 +28,8 @@ CMDLINE_ARGS=("$@")
        GUI_TERM="x-terminal-emulator"
       TERM_OPTS="--geometry=+50+50 -e"
  TERM_TITLE_OPT="--title"
-      GUI_FILER="thunar"
-     ##FILER_OPTS="--new -d"
+      GUI_FILER="rox"
+     FILER_OPTS="--new -d"
 
         ARCHIVE="archive"
 
@@ -1420,7 +1420,7 @@ explore_dir() {
 
         #bg_info_box -o --undecorated "$TITLE" "" "$@"
         bg_info_box "$TITLE" "" "$@"
-        thunar $dir
+        $filer $opts $dir
         kill_bg_info_box
     else
         #markup_text "$@"
