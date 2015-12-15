@@ -1,3 +1,16 @@
+mx-antix-libs (0.4.0.2mx15) mx; urgency=medium
+
+  * Fixed to add thunar, rox and spacefm to antiX-common.sh
+  * dev/null yad messages
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 15 Dec 2015 22:40:00 +0200
+
+mx-antix-libs (0.4.0.1mx15) mx; urgency=medium
+
+  * Repackaged to correct version numbering error
+
+ -- Timothy E. Harris <maintainer@mepiscommunity.org>  Sat, 24 Oct 2015 20:36:27 -0400
+
 mx-antix-libs (0.3.9.6mx15) mx; urgency=medium
 
   * Fixed to add thunar to antiX-common.sh

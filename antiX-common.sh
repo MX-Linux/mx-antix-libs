@@ -28,8 +28,7 @@ CMDLINE_ARGS=("$@")
        GUI_TERM="x-terminal-emulator"
       TERM_OPTS="--geometry=+50+50 -e"
  TERM_TITLE_OPT="--title"
-      GUI_FILER="thunar"
-     ##FILER_OPTS="--new -d"
+     GUI_FILERS="rox thunar spacefm"
 
         ARCHIVE="archive"
 
@@ -1314,6 +1313,7 @@ select_device() {
                 --column="$mount_lab"                   \
                 --column="$size_lab"                    \
                 --column="$free_lab"                    \
+                2>/dev/null                             \
             )
 
             [ "$result" ] || confirm_quit
@@ -1402,10 +1402,9 @@ explore_dir() {
 
     if [ "$SET_GUI" ]; then
         local f filer
-        for f in rox thunar; do
-            which $f &>/dev/null && continue
-            filer=$f
-            break
+        for f in $GUI_FILERS; do
+            filer=$(which $f 2>/dev/null)
+            [ "$filer" ] && break
         done
 
         if [ -z "$filer" ]; then
@@ -1420,7 +1419,7 @@ explore_dir() {
 
         #bg_info_box -o --undecorated "$TITLE" "" "$@"
         bg_info_box "$TITLE" "" "$@"
-        thunar $dir
+        $filer $opts $dir
         kill_bg_info_box
     else
         #markup_text "$@"
