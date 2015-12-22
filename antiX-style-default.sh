@@ -9,13 +9,14 @@ LOADED_STYLE="true"
     TEXT_MARGIN=8
         PULSATE="--progress --pulsate"
        SIZE_FMT='%22s: [n]%7s[/] meg'
+        ANY_FMT='%22s: [n]%7s[/]'
 
     ANTIX_IMAGE="/usr/local/share/icons/mxfcelogo.png"
 
 if [ "$Static_antiX_Libs" ]; then
-    YAD_STD_OPTS="--center --on-top"
+    YAD_STD_OPTS="--center --on-top --width=680"
 else
-    YAD_STD_OPTS="--center --on-top --image=$ANTIX_IMAGE"
+    YAD_STD_OPTS="--center --on-top --width=680 --image=$ANTIX_IMAGE"
 fi
 
 
@@ -23,7 +24,7 @@ fi
 #--image=gtk-dialog-info
 
 YAD_DEVICE_OPTS="
-    --width=600 --height=400
+    --width=680 --height=400
     --button=gtk-ok:0
     --button=gtk-cancel:1"
 

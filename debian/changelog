@@ -1,3 +1,10 @@
+mx-antix-libs (0.4.0.3mx15) mx; urgency=medium
+
+  * Bugfixes from RC1
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 21 Dec 2015 17:14:00 +0200
+
+
 mx-antix-libs (0.4.0.2mx15) mx; urgency=medium
 
   * Fixed to add thunar, rox and spacefm to antiX-common.sh
