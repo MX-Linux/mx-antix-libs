@@ -1,13 +1,13 @@
 
-VERSION="0.23"
-VDATE="Thu Dec 13 12:02:05 MDT 2012"
+VERSION="0.25"
+VDATE="Fri Jan 29 10:57:55 MST 2016"
 
 # GETTEXT_KEYWORD="gt_ac"
 # GETTEXT_KEYWORD="pfgt_ac"
 # GETTEXT_KEYWORD="help_error"
 
 LIVE_DIR=/live
-read LIVE_DIR 2>/dev/null < /etc/live/live-dir
+test -e /etc/live/config/initrd.out && LIVE_DIR=/etc/live
 
 RESTORE_LIVE_DIRS="usr/share/antiX-install"
 EXCLUDES_DIR=/usr/local/share/excludes
@@ -641,7 +641,7 @@ free_space() {
 get_mountpoint() {
     local dev="$1"
     #vmsg "get_mountpoint($dev)"
-    local mp=$(grep "^$dev " /proc/mounts | cut -d" " -f2)
+    local mp=$(grep "^$dev " /proc/mounts | head -n1 | cut -d" " -f2)
     #vmsg "get_mountpoint: mp=$mp"
     if [ "$mp" ]; then
         echo $mp
@@ -727,9 +727,9 @@ mount_if_needed() {
     # set $mp to last param and $dev to next-to-last param.  This way we can
     # mimic the order of params to the normal mount command.
     local mp idx dev
-    mp="$(eval echo \$$#)"
-    idx=$(( $# - 1))
-    dev="$(eval echo \$$idx)"
+    eval mp=\$$#
+    idx=$(($# - 1))
+    eval dev=\$$idx
 
     if ! [ -e "$dev" ]; then
         mount_error "$(pfgt "%s is not a device or a file" "[f]$dev[/]")"
@@ -743,6 +743,10 @@ mount_if_needed() {
             return
         fi
     fi
+
+    #  If $dev was already mounted at $mp then there's nothing to do.
+    grep -q "^$dev $mp " /proc/mounts && return
+    # echo grep -q "^$dev $mp " /proc/mounts
 
     local exist_mp=$(get_mountpoint $dev)
     if [ "$exist_mp" ]; then
@@ -970,7 +974,7 @@ save_or_delete() {
     local full dir="$1" file="$2"
     full="$dir/$file"
     if ! [ -e "$full" ]; then
-        warn "$(pfgt_ac "Strange.  File %s does not exit." "[f]$full[/]")"
+        warn "$(pfgt_ac "Strange.  File %s does not exist." "[f]$full[/]")"
         return 0
     fi
 

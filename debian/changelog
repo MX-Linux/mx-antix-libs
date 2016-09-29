@@ -1,3 +1,10 @@
+mx-antix-libs (0.4.0.5mx15) mx; urgency=medium
+
+  * Changes for MX-16 release
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 29 Sep 2016 13:00:00 +0200
+
+
 mx-antix-libs (0.4.0.4mx15) mx; urgency=medium
 
   * Fixed previous wrong style file
