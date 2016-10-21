@@ -1,16 +1,8 @@
-mx-antix-libs (0.4.0.5mx15) mx; urgency=medium
+mx-antix-libs (0.4.1mx16) mx; urgency=medium
 
-  * Changes for MX-16 release
+  * Minor changes to antiX-common.sh
 
- -- anticapitalista <antiX@operamail.com>  Thu, 29 Sep 2016 13:00:00 +0200
-
-
-mx-antix-libs (0.4.0.4mx15) mx; urgency=medium
-
-  * Fixed previous wrong style file
-
- -- anticapitalista <antiX@operamail.com>  Tue, 22 Dec 2015 17:39:00 +0200
-
+ -- anticapitalista <antix@operamail.com>  Thu, 29 Sep 2016 13:14:18 +0300
 
 mx-antix-libs (0.4.0.3mx15) mx; urgency=medium
 
