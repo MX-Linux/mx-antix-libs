@@ -1,3 +1,9 @@
+mx-antix-libs (0.4.2mx16) mx; urgency=medium
+
+  * added mxers file
+
+ -- anticapitalista <antix@operamail.com>  Tue, 25 Oct 2016 21:13:34 +0300
+
 mx-antix-libs (0.4.1mx16) mx; urgency=medium
 
   * Minor changes to antiX-common.sh

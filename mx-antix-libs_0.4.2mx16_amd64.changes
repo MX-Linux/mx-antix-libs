@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Tue, 25 Oct 2016 21:13:34 +0300
+Source: mx-antix-libs
+Binary: mx-antix-libs
+Architecture: source all
+Version: 0.4.2mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: anticapitalista <antix@operamail.com>
+Description:
+ mx-antix-libs - libs for running antiX/MX.
+Changes:
+ mx-antix-libs (0.4.2mx16) mx; urgency=medium
+ .
+   * added mxers file
+Checksums-Sha1:
+ 774cf5e9c5e5919b14f62b21afe7329bba7b6b58 1212 mx-antix-libs_0.4.2mx16.dsc
+ 0d586d2e60f3c3e90bbbb8f82f8a9c9f053975bf 14284 mx-antix-libs_0.4.2mx16.tar.xz
+ 940689207326387fe21465245f6b4681da75bc72 14992 mx-antix-libs_0.4.2mx16_all.deb
+Checksums-Sha256:
+ 5c392e59addc7bf5b2dfd028ac2d3d234088ffdd7662f11b2b17ede5e6a2c92e 1212 mx-antix-libs_0.4.2mx16.dsc
+ 38fa23db3fd8a4756c8166ad1ee7b64d8e54dd145028fbadee9951977e4cedf3 14284 mx-antix-libs_0.4.2mx16.tar.xz
+ d6345e1fe79888f62ef764ec4b8186afcc6f29de4a520a445a9f3b28e747c02b 14992 mx-antix-libs_0.4.2mx16_all.deb
+Files:
+ 2a441cb23cea4d0abc00e808f2d63eed 1212 system optional mx-antix-libs_0.4.2mx16.dsc
+ 56bb522d4044f27f2b87fa2ad380fae5 14284 system optional mx-antix-libs_0.4.2mx16.tar.xz
+ 8b2eb456b7243c11b77ef1c432a47a43 14992 system optional mx-antix-libs_0.4.2mx16_all.deb
+Original-Maintainer: anticapitalista <antiX@operamail.com>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQExBAEBCAAbBQJYD6D5FBxhbnRpeEBvcGVyYW1haWwuY29tAAoJEKgFguAABn/d
+YhgH/258vrwfTn+rNbxxmpL3RQ4vva2eE+1drFarynWMeuxTys6AR0vJpL5CK3ZB
+B6uPHFaNivapDyYAeIKzCOlSf2RKVuPzGLZfvandQ3MgaJriGTsvTgQamICMrFC8
+8nVzue5ePWiwFozFystIrJa+RZfUGiCHRaSp04OVkq5CzE7yYt57MVuQ72S+C/rz
+jkXSQUGkNU121oAYKC+dTR3OESnOISjQM+XJjgwwrgPPylfBBvPXOSBXOa940r2a
+q3tBUMaNHyND1gTkoC9uC4cxCLrEOIzpxqehJps9YCugA1LNviVUp0vTQjpGE5IM
+9BL+ikZZeCGEahj1pLx0Ol6/eEQ=
+=8QyA
+-----END PGP SIGNATURE-----
