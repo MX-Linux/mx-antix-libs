@@ -1,4 +1,4 @@
-mx-antix-libs (0.4.2mx17) UNRELEASED; urgency=medium
+mx-antix-libs (0.4.2mx16+1) mx; urgency=medium
 
   * Added %users ALL=(root) NOPASSWD: /usr/sbin/service network-manager restart to mxers
 
