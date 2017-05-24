@@ -18,6 +18,8 @@
 
 %users ALL=(root) NOPASSWD: /bin/chvt 
 
+%users ALL=(root) NOPASSWD: /usr/sbin/service network-manager restart
+
 Defaults env_keep += "RESTARTED HOME"
 Defaults  !requiretty
 Defaults  !tty_tickets
