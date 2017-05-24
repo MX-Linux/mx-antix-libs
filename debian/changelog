@@ -1,3 +1,9 @@
+mx-antix-libs (0.4.2mx17) UNRELEASED; urgency=medium
+
+  * Added %users ALL=(root) NOPASSWD: /usr/sbin/service network-manager restart to mxers
+
+ -- anticapitalista <antix@operamail.com>  Wed, 24 May 2017 17:07:51 +0300
+
 mx-antix-libs (0.4.2mx16) mx; urgency=medium
 
   * added mxers file
