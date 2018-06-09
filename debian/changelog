@@ -1,3 +1,9 @@
+mx-antix-libs (0.4.3) mx; urgency=medium
+
+  * remove diverts safely 
+
+ -- anticapitalista <dolphin@mx>  Fri, 08 Jun 2018 22:03:11 -0400
+
 mx-antix-libs (0.4.2mx16+1) mx; urgency=medium
 
   * Added %users ALL=(root) NOPASSWD: /usr/sbin/service network-manager restart to mxers
